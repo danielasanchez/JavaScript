@@ -32,8 +32,10 @@ perro.nombre= 'Tequila';
 
 console.log("mi perro se llama "+perro.nombre);
 
-var {nombre} = perro;
+var {nombre,raza,edad} = perro;
 console.log("mi perro se llama:",nombre);
+console.log("mi perro raza:",raza);
+console.log("mi perro edad:",edad);
 
 var {nombre:name} = perro;
 console.log("mi perro se llama:",name);

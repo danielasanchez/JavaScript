@@ -23,9 +23,9 @@ console.log("Fin");
 
 const perritos=["Whisky","Tequila","Ron"];
 
-for (var p of perritos) {
+for (var p of perritos) {
 	console.log(p);
 }
-for (var i in perritos) {
+for (var i in perritos) {
 	console.log(perritos[i]);
 }

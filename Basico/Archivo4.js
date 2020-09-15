@@ -13,5 +13,5 @@ switch(edad)
         break;
     default:
         console.log("Tu edad no esta en la lista");
-    break;
+        break;
 }
