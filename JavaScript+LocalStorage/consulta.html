@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="index.js"></script>
+</head>
+
+<body onload="readQ()"> 
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JS + LocalStorage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Alumnos<span class="sr-only">Alumnos</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Consulta<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container p-3 my-3">
+        <div class="row">
+            
+            <div class="form-group">
+                <label for="Input5">Carrera</label>
+                <select class="form-control " id="Input5"  onchange="readQ()">
+                    <option value="selecciona">selecciona</option>
+                    <option value="Informatica">Informatica</option>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="TICS">TICS</option>
+                </select>
+            </div>  
+            <div class="col-md-12">
+                <h3 style="text-align:center">Alumnos</h3>
+
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Matrícula</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Carrera</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody id='Table2'>
+
+
+                    </tbody>
+                  </table>
+                
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>
