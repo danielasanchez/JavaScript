@@ -39,16 +39,16 @@ const Familia=[
 ];
 
 //const sueldos = Familia.reduce((sueldoT,persona)=>sueldoT+persona.sueldo,0)
-const sueldos = Familia.reduce((sueldoT,persona)=>{return sueldoT+persona.sueldo},0)
+const sueldos = Familia.reduce((sueldoT,p)=>{return sueldoT+p.sueldo},0)
 console.log(sueldos)
 
 //operador ternario
 //condicion ? accion_verdadera : accion_falsa
-encontro ? console.log("se encontro") : console.log("no se encontro");
+encontro==true ? console.log("se encontro") : console.log("no se encontro");
 
 const respuesta = encontro ? "se encontro" : "no se encontro";
 
 //condicion && accion_verdadera 
-encontro && console.log("si se encontro");
+encontro==true  && console.log("si se encontro");
 
 console.log(respuesta);
