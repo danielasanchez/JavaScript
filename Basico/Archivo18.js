@@ -1,4 +1,7 @@
 const colores={
+    "materiales":[
+      
+    ],
     "colors": [
       {
         "color": "black",
@@ -58,6 +61,6 @@ const colores={
   
 console.log(colores.colors);
 
-colores.colors.forEach(c=>{
-    console.log(c.color)
+colores.colors.forEach(co=>{
+    console.log(co.color)
 });
