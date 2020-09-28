@@ -18,8 +18,8 @@ function createR() {
     if (id.length > 0) {
         //creo un objeto que guarda los datos
         var alumno = {
-            id, //matricula:id
-            nombre,
+            id, //matricula:id    id:id
+            nombre,//nombre:nombre
             correo,
             carrera,
         }
