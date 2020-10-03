@@ -15,30 +15,36 @@ function buscar1(peli,key){
       .then(data => {
         return data.json()
       }).then(resultado=>{
+
             console.log(resultado);
+
             const {Search=[]} = resultado;
+            
+            console.log(Search);
             document.getElementById("lista").innerHTML='';
+
             Search.map((p)=>{
                 document.getElementById("lista").innerHTML+=`<div style="width:30;">
                          <img width='100%' src=${p.Poster} alt="No hay poster"></img>
             </div>`;
             })
             
-            //console.log(Search);
+            
       });
 }
 
 const buscar2=async(peli,key)=>{
 
     const api_url=`http://www.omdbapi.com/?s=${peli}&apikey=${key}`
-    const respuesta= await fetch(api_url);
-    const data= await respuesta.json();
-    const Search = await data.Search;
+    const data= await fetch(api_url);
+    const respuesta= await data.json();
+    const Search = await respuesta.Search;
 
     console.log(Search);
 
     if(Search!=null)
-    {   document.getElementById("lista").innerHTML='';
+    {   
+        document.getElementById("lista").innerHTML='';
         Search.map((p)=>{
                 document.getElementById("lista").innerHTML+=`<div style="width:30;">
                     <img width='100%' src=${p.Poster} alt="No hay poster"></img></div>`;
@@ -56,9 +62,11 @@ const buscar3=async(peli,key)=>{
     const Search = await respuesta.data.Search;
     console.log(Search);
 
-    document.getElementById("lista").innerHTML='';
+    
     if(Search!=null)
     {
+        document.getElementById("lista").innerHTML='';
+        
         Search.map((p)=>{
                 document.getElementById("lista").innerHTML+=`<div style="width:30;">
                     <img width='100%' src=${p.Poster} alt="No hay poster"></img></div>`;
