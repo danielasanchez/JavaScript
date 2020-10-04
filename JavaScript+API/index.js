@@ -1,21 +1,18 @@
-
 function Leer() {
     const peli = document.getElementById("input").value;
     //obtain an apikey on this web
     //http://www.omdbapi.com/apikey.aspx
     const key='';
-    buscar2(peli,key);
+    const api_url=`http://www.omdbapi.com/?s=${peli}&apikey=${key}`
+    buscar3(api_url);
 }
 
-function buscar1(peli,key){
-
-    const api_url=`http://www.omdbapi.com/?s=${peli}&apikey=${key}`
+function buscar1(api_url){
 
     fetch(api_url)
       .then(data => {
         return data.json()
       }).then(resultado=>{
-
             console.log(resultado);
 
             const {Search=[]} = resultado;
@@ -24,18 +21,15 @@ function buscar1(peli,key){
             document.getElementById("lista").innerHTML='';
 
             Search.map((p)=>{
-                document.getElementById("lista").innerHTML+=`<div style="width:30;">
+                document.getElementById("lista").innerHTML+=`<div style="margin-top:10px;">
                          <img width='100%' src=${p.Poster} alt="No hay poster"></img>
             </div>`;
             })
-            
-            
       });
 }
 
-const buscar2=async(peli,key)=>{
+const buscar2=async(api_url)=>{
 
-    const api_url=`http://www.omdbapi.com/?s=${peli}&apikey=${key}`
     const data= await fetch(api_url);
     const respuesta= await data.json();
     const Search = await respuesta.Search;
@@ -46,7 +40,7 @@ const buscar2=async(peli,key)=>{
     {   
         document.getElementById("lista").innerHTML='';
         Search.map((p)=>{
-                document.getElementById("lista").innerHTML+=`<div style="width:30;">
+                document.getElementById("lista").innerHTML+=`<div style="margin-top:10px;">
                     <img width='100%' src=${p.Poster} alt="No hay poster"></img></div>`;
         })
 
@@ -55,9 +49,8 @@ const buscar2=async(peli,key)=>{
 }    
 
      
-const buscar3=async(peli,key)=>{
+const buscar3=async(api_url)=>{
 
-    const api_url=`http://www.omdbapi.com/?s=${peli}&apikey=${key}`
     const respuesta= await axios(api_url);
     const Search = await respuesta.data.Search;
     console.log(Search);
@@ -68,7 +61,7 @@ const buscar3=async(peli,key)=>{
         document.getElementById("lista").innerHTML='';
         
         Search.map((p)=>{
-                document.getElementById("lista").innerHTML+=`<div style="width:30;">
+                document.getElementById("lista").innerHTML+=`<div style="margin-top:10px;">
                     <img width='100%' src=${p.Poster} alt="No hay poster"></img></div>`;
         })
 

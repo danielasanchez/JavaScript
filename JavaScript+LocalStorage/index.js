@@ -115,7 +115,7 @@ function deleteR(id){
     { 
         localStorage.removeItem("Alumnos");
     }
- 
+  
     read();
     
 }
