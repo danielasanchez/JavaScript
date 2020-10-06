@@ -26,6 +26,8 @@ function buscar1(api_url){
             </div>`;
             })
       });
+
+
 }
 
 const buscar2=async(api_url)=>{
@@ -53,6 +55,8 @@ const buscar3=async(api_url)=>{
 
     const respuesta= await axios(api_url);
     const Search = await respuesta.data.Search;
+    console.log(respuesta.data);
+    
     console.log(Search);
 
     
