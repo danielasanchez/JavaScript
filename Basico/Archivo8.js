@@ -9,5 +9,5 @@ function mifuncion2(animal1,animal2, ...animales) {
     console.log(animales);
 }
 
-mifuncion2("perro","gato","raton","perico");
+mifuncion2("perro","gato","raton","perico","tortuga");
 

@@ -36,8 +36,8 @@ var {nombre,raza,edad} = perro;
 console.log("mi perro se llama:",nombre);
 console.log("mi perro raza:",raza);
 console.log("mi perro edad:",edad);
-
-var {nombre:name} = perro;
-console.log("mi perro se llama:",name);
+nombre="ron"
+var {nombre:names} = perro;
+console.log("mi perro se llama:",names);
 
 

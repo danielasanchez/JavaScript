@@ -5,13 +5,15 @@ function mifuncion1(name="Pedro",edad=16) {
     return edad*12;
 }
 
-x=2020;
+var x=2020;
 
 function mifuncion2() {
-    y=x;
+    var y=x;
     console.log(x);
     
 }
 
-mifuncion1();
+var meses=mifuncion1("Pepe",10);
 mifuncion2();
+
+console.log("Los meses son: "+meses);

@@ -8,7 +8,7 @@ while(a<10)
 {
     console.log("la variable 'a' vale:"+a);
     a++; //a=a+1  o  a+=1
-    if(a===5)
+    if(a===5)  //'5'==5 '5'===5
         break;   
 }
 
