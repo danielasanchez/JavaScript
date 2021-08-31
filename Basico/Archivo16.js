@@ -29,7 +29,7 @@ var arregloNum= numbers.sort((a,b) => a-b);
 console.log(arregloNum)
 
 numbers.forEach(n => console.log(n));
-
+//numbers=[6,34,33,22,33,11]
 var arreglo= numbers.filter(n => n!=33);
-
+//arreglo=[6,34,22,11]
 console.log(arreglo);

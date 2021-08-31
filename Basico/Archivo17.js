@@ -25,6 +25,7 @@ const perritosR=[
 	{nombre:"Akira",edad:8, raza:"Mestiza"}
 ];
 
+// Regresa solo el primero
 const datos = perritosR.find(p=> p.nombre=="Akira");
 
 console.log(datos);
@@ -44,11 +45,15 @@ console.log(sueldos)
 
 //operador ternario
 //condicion ? accion_verdadera : accion_falsa
-encontro==true ? console.log("se encontro") : console.log("no se encontro");
+encontro==true ? console.log("se encontro!!!!") : console.log("no se encontro");
 
-const respuesta = encontro ? "se encontro" : "no se encontro";
+const respuesta = encontro==true ? 
+				"se encontro" 
+				: 
+				"no se encontro"
+				;
 
 //condicion && accion_verdadera 
-encontro==true  && console.log("si se encontro");
+encontro==true  && console.log("si se encontro &&");
 
 console.log(respuesta);
