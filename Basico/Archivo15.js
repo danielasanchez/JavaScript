@@ -21,3 +21,8 @@ console.log(perritos1);
 perritos1.splice(0, 1);
 // cuando omites “elemento” elimina al que esta en esa posición
 console.log(perritos1);
+
+                //posicion,cantidad
+perritos1.splice(1, 3);
+// elimina partiendo de una posicion una cantidad de elementos
+console.log(perritos1);
