@@ -15,3 +15,4 @@ var animalitos=["perro","gato","raton","perico"];
 //podemos enviar un numero ilimitado de parametros
 mifuncion2(...animalitos);
     
+

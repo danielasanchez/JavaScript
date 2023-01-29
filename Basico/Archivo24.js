@@ -13,3 +13,11 @@ export const multiplicacion=(n1,n2)=>{
 export const division=(n1,n2)=>{
     return "La division es "+(n1/n2);
 }
+
+
+// export {
+//     suma,
+//     resta,
+//     multiplicacion,
+//     division
+// }

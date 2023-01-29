@@ -6,7 +6,9 @@ const perritos2= new Array("Yoko","Mitsuki","Akira","Solovino");
 
 //const mis_perros= [perritos1,perritos2];
 
-const mis_perros=[...perritos1,...perritos2];
+let mis_perros=[...perritos1,...perritos2];
+
+mis_perros=[...mis_perros,"Sakura"];
 
 console.log(mis_perros)
 

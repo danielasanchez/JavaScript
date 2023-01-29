@@ -1,6 +1,6 @@
-//export const colores={
+export const colores={
 //export default{
-const colores={
+// const colores={
     "colors": [
       {
         "color": "black",
@@ -58,4 +58,26 @@ const colores={
     ],
   }
 
-  export default colores;
+// export default colores;
+
+//Solo se puede una funcion por default por archivo
+// export const colores2={
+//     "colors": [
+//       {
+//         "color": "black",
+//         "category": "hue",
+//         "type": "primary",
+//         "code": {
+//           "rgba": [255,255,255,1],
+//           "hex": "#000"
+//         }
+//       },
+//     ],
+//   }
+
+
+
+  // export {
+  //   colores as default,
+  //   colores2
+  // }

@@ -3,6 +3,11 @@
 var numbers=[1,2,3,4,5,6];
 
 numbers.map(function(num){
+    console.log(num);
+});
+
+
+numbers.map(function(num){
     //console.log(num*2);
     return num*2;
 });
